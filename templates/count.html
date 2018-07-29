@@ -1,0 +1,14 @@
+<h1> There are {{ count }} words in the text </h1>
+
+{{ textarea }}
+
+
+{% for word,counttotal in dictn %}
+
+{{ word }} - {{counttotal }}
+<br />
+
+
+{% endfor %}
+
+<a href="{% url 'about' %}"> go to about </a>
